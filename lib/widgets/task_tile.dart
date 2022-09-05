@@ -14,9 +14,7 @@ class TaskTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onLongPress: () {
-        longPressCallBack;
-      },
+      onLongPress: longPressCallBack(),
       title: Text(taskTittle),
       trailing: Checkbox(
           activeColor: Colors.lightBlueAccent,
